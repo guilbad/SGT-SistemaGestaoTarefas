@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>SGT - Sistema de Gestão de Tarefas</title>
+        <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+        <header class="hero">
+                <img src="../img/Brasília (hrz).png" alt="Logo" class="logo-img">
+                <span class="titulo">Acompanhe Suas Tarefas Aqui!</span>
+        </header>
+
+
+        <nav class="menu">
+        <ul>
+                <li><a class="a-menu"href="#">Início</a></li>
+                <li><a class="a-menu"href="#pag-novatarefa">Nova Tarefa</a></li>
+                <li><a class="a-menu"href="#painelHistorico">Histórico</a></li>
+                <li><a class="a-menu"href="#pag-categorias">Categorias</a></li>
+              
+        </ul>
+        </nav>
+
+
+        <section id="pag-novatarefa">
+                <h5> Nova Tarefa </h5>
+
+        <main>
+
+        <form id="tarefaForm">
+                <input type="text" id="nomeTarefa" placeholder="Nome da Tarefa" required />
+
+        <select id="prioridadeTarefa" required>
+                <option value="" disabled selected>Prioridade</option>
+                <option value="estudo">Baixa</option>
+                <option value="trabalho">Média</option>
+                <option value="pessoal">Alta</option>
+                <option value="outros">Urgente</option>
+        </select>
+
+                <input type="date" id="dataTarefa" required />
+                <input type="time" id="horaTarefa" required />
+
+                <button type="submit">Adicionar Tarefa</button>
+
+        </form>
+                <ul id="listaTarefas"></ul>
+
+        </main>
+
+
+
+        <div id="painelHistorico">
+                <button id="btnVisualizarHistorico">Visualizar Histórico de Tarefas</button>
+                <ul id="historicoVisual"></ul>
+        </div>
+
+
+
+        <section id="pag-categorias">
+                <h3> Categorias </h3>
+
+        <div id="container">
+        <div class="card">
+
+                <img src="../img/img1.jpg" alt="Imagem de tarefas pessoais" />
+                <div class="card-content">
+
+                <h4>Pessoal</h4>
+
+        </div>
+        </div>
+
+        <div class="card">
+                <img src="../img/img2.jpg" alt="AImagem de tarefas de estudos"/>
+                <div class="card-content">
+
+                <h4>Estudos</h4>
+
+        </div>
+        </div>
+
+        <div class="card">
+                <img src="../img/img3.jpg" alt="Imagem de tarefas de trabalhos"/>
+                <div class="card-content">
+                        
+                <h4>Trabalhos</h4>
+
+        </div>
+        </div>
+
+        <div class="card">
+                <img src="../img/img4.jpg" alt="Imagem de tarefas de viagens "/>
+                <div class="card-content">
+
+                <h4>Viagens</h4>
+
+        </div>
+        </div>
+        </div>
+
+        </section>
+
+
+        <script src="script.js"></script>
+
+
+        <footer>
+                <p>Desenvolvedores: Felipe Ladeira - Guilherme Guimarães - Kênya.</p> 2025</p>
+        </footer>
+
+
+</body>
+
+</html>
