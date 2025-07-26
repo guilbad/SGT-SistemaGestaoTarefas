@@ -13,13 +13,6 @@ const inputData = document.getElementById('dataTarefa');
 const inputHora = document.getElementById('horaTarefa');
 
 
-// Menu responsivo para mobile
-const btnMenu = document.getElementById('btnMenu');
-const menuLinks = document.getElementById('menuLinks');
-
-btnMenu.addEventListener('click', () => {
-  menuLinks.classList.toggle('active');
-});
 
 
 
